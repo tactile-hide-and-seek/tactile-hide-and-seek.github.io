@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Tactile Hide and Seek: Bimanual Object Blind Search and Retrieval via Tactile-Only Feedback">
+  <meta name="keywords" content="Tactile Sensing, Bimanual Manipulation, Robotic Search, HAS Dataset">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tactile Hide and Seek</title>
+  <link rel="icon" type="image/png" href="./static/images/icon.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <div class="mb-4" style="display: flex; justify-content: center; align-items: center; gap: 24px;">
+            <img src="./static/images/tum_logo.jpg" alt="TUM Logo" style="height: 120px;">
+            <img src="./static/images/ics_logo.jpg" alt="ICS Logo" style="height: 120px;">
+          </div>
+          <h1 class="title is-1 publication-title" style="font-weight: 900; font-size: 3.2rem; color: #007ac3; margin-bottom: 0.2rem;">Tactile Hide and Seek</h1>
+          <h2 class="title is-3 publication-title" style="color: #000000; font-weight: 700; margin-top: 0.3rem;">Bimanual Object Blind Search and Retrieval via Tactile-Only Feedback</h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://xiangyu-fu.github.io/">Xiangyu Fu</a><sup>1</sup>,</span>
+            <span class="author-block">Hao Xing<sup>1</sup>,</span>
+            <span class="author-block">Simon Armleder<sup>1</sup>,</span>
+            <span class="author-block">Wenlan Shen<sup>1</sup>,</span>
+            <span class="author-block">Fengyi Wang<sup>1</sup>,</span>
+            <span class="author-block">Gordon Cheng<sup>1</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Institute for Cognitive Systems, Technical University of Munich</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="YOUR_PDF_URL_HERE" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/tactile-hide-and-seek" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code (Coming Soon)</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/StanFu/Hide-and-Seek" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-database"></i></span>
+                  <span>HAS Dataset</span>
+                </a>
+              </span>
+            </div>
+
+            <!-- Main Video -->
+            <div class="column has-text-centered">
+              <div class="publication-video">
+                <iframe src="https://www.youtube-nocookie.com/embed/oyF38YPZOeg?rel=0&modestbranding=1"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser_demo.mp4" type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        A bimanual robot searching and retrieving objects in a vision-denied environment using only tactile skin sensors.
+      </h2>
+    </div>
+  </div>
+</section> -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Locating and identifying objects in vision-denied environments is a critical challenge for intelligent robot systems. 
+            We present a <strong>tactile-only method</strong> for object search and recognition using custom tactile skin sensors on robot hands. 
+            The system employs a novel <strong>two-phase classification process</strong>: an initial single-handed classification by pushing, followed by a bimanual verification stage that incorporates size measurement.
+          </p>
+          <p>
+            To support this, we introduce the <strong>HAS (Hide-and-Seek) dataset</strong>, a large-scale multimodal tactile dataset of <strong>1.12 million frames</strong>. 
+            Our system achieves a 91.1% object classification accuracy and a 61.4% success rate in real-world identification experiments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Tactile Hide-and-Seek Framework</h2>
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <img src="./static/images/framework_overview.png" alt="THAS Framework Overview"/>
+        <div class="content has-text-justified">
+          <p>
+            The framework consists of four main phases: 
+            <strong>(1) Bimanual Tactile Exploration</strong> for incremental 3D mapping; 
+            <strong>(2) Push and Classify</strong> for initial object identification; 
+            <strong>(3) Bimanual Verification</strong> to reduce errors via shape and size cues; 
+            <strong>(4) Grasp and Pick</strong> for target retrieval.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Dual-Head Multimodal Classification Framework</h2>
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <img src="./static/images/classifier.png" alt="Dual-head multimodal classification framework" style="width: 100%; border-radius: 6px;"/>
+        <div class="content has-text-justified" style="margin-top: 1.2rem;">
+          <p>
+            Our classifier takes five synchronized tactile modalities as input:
+            <strong>(i)</strong> raw skin signals,
+            <strong>(ii)</strong> tactile point clouds,
+            <strong>(iii)</strong> virtual skin wrenches,
+            <strong>(iv)</strong> end-effector poses, and
+            <strong>(v)</strong> wrist force/torque wrenches.
+            Each modality is independently encoded into a compact 128-dimensional representation by a dedicated encoder network.
+            The resulting embeddings are concatenated, augmented with learnable modality embeddings, and fused via a
+            <strong>multimodal fusion transformer</strong>.
+            The unified representation is then passed to a <strong>dual-head classifier</strong> that jointly predicts
+            the <em>object category</em> (33 classes + negative) and the <em>weight class</em> (3 classes + none),
+            enabling robust tactile-based object identification even in vision-denied environments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">HAS Dataset</h2>
+    <div class="content has-text-justified">
+      <p>
+        The <strong>Hide-and-Seek (HAS) Dataset</strong> covers 61 object-weight categories with 1.12 million frames. 
+        It includes five synchronized modalities: tactile point clouds, virtual skin wrenches, proprioceptive poses, raw skin data, and wrist F/T wrenches.
+      </p>
+      <img src="./static/images/Dataset.png" alt="HAS Dataset Gallery"/>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{fu2025tactile,
+  title={Tactile Hide and Seek: Bimanual Object Blind Search and Retrieval via Tactile-Only Feedback},
+  author={Fu, Xiangyu and Xing, Hao and Armleder, Simon and Shen, Wenlan and Wang, Fengyi and Cheng, Gordon},
+  journal={arXiv preprint},
+  year={2026}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            Template source from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
