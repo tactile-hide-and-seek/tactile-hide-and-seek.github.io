@@ -75,10 +75,9 @@
             <!-- Main Video -->
             <div class="column has-text-centered">
               <div class="publication-video">
-                <iframe src="https://www.youtube-nocookie.com/embed/oyF38YPZOeg?rel=0&modestbranding=1"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                <video controls autoplay muted loop playsinline style="width: 100%; border-radius: 6px;">
+                  <source src="./static/videos/thas.mp4" type="video/mp4">
+                </video>
               </div>
             </div>
 
@@ -138,12 +137,18 @@
             <strong>(4) Grasp and Pick</strong> for target retrieval.
           </p>
         </div>
+        <div style="display: flex; justify-content: center; margin-top: 1rem;">
+          <video controls autoplay muted loop playsinline style="width: 80%; border-radius: 6px;">
+            <source src="./static/videos/demo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p class="has-text-centered is-size-6" style="color: #666; margin-top: 0.75rem; margin-bottom: 0.5rem;"><em>Demos — full pipeline execution: exploration, push-and-classify, bimanual verification, and retrieval</em></p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3">Dual-Head Multimodal Classification Framework</h2>
     <div class="columns is-centered">
@@ -168,7 +173,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -178,8 +183,43 @@
         The <strong>Hide-and-Seek (HAS) Dataset</strong> covers 61 object-weight categories with 1.12 million frames. 
         It includes five synchronized modalities: tactile point clouds, virtual skin wrenches, proprioceptive poses, raw skin data, and wrist F/T wrenches.
       </p>
-      <img src="./static/images/Dataset.png" alt="HAS Dataset Gallery"/>
+      <img src="./static/images/Dataset.png" alt="HAS Dataset Gallery" style="width: 100%; border-radius: 6px;"/>
     </div>
+
+    <!-- Recording Process -->
+    <h3 class="title is-4" style="margin-top: 2rem;">Data Recording Process</h3>
+    <p class="has-text-justified" style="margin-bottom: 1.5rem;">
+      Data is collected via two interaction primitives that mirror the system's online pipeline.
+      In the <strong>Push</strong> phase, the robot performs a single-handed pushing motion to make initial tactile contact with the object.
+      In the <strong>Grasp</strong> phase, both hands simultaneously grasp the object to capture bimanual tactile signals for size and shape verification.
+    </p>
+
+    <div class="columns is-centered" style="margin-bottom: 0.5rem;">
+      <div class="column has-text-centered is-one-third">
+        <img src="./static/images/push_1.gif" alt="Push recording 1" style="width: 100%; border-radius: 6px;"/>
+      </div>
+      <div class="column has-text-centered is-one-third">
+        <img src="./static/images/push_2.gif" alt="Push recording 2" style="width: 100%; border-radius: 6px;"/>
+      </div>
+      <div class="column has-text-centered is-one-third">
+        <img src="./static/images/push_3.gif" alt="Push recording 3" style="width: 100%; border-radius: 6px;"/>
+      </div>
+    </div>
+    <p class="has-text-centered is-size-6" style="color: #666; margin-bottom: 1.5rem;"><em>Push phase — single-handed tactile contact</em></p>
+
+    <div class="columns is-centered" style="margin-bottom: 0.5rem;">
+      <div class="column has-text-centered is-one-third">
+        <img src="./static/images/grasp_1.gif" alt="Grasp recording 1" style="width: 100%; border-radius: 6px;"/>
+      </div>
+      <div class="column has-text-centered is-one-third">
+        <img src="./static/images/grasp_2.gif" alt="Grasp recording 2" style="width: 100%; border-radius: 6px;"/>
+      </div>
+      <div class="column has-text-centered is-one-third">
+        <img src="./static/images/grasp_3.gif" alt="Grasp recording 3" style="width: 100%; border-radius: 6px;"/>
+      </div>
+    </div>
+    <p class="has-text-centered is-size-6" style="color: #666; margin-bottom: 1rem;"><em>Grasp phase — bimanual tactile verification</em></p>
+
   </div>
 </section>
 
